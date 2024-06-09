@@ -1,5 +1,8 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:fur_ball/core/constants/app_colors.dart';
+import 'package:fur_ball/features/bottom_nav_bar/bottom_navbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,9 +11,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.accentColor,
+        backgroundColor: AppColors.whiteColor,
         title: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(top: 8.0),
           child: Image.asset(
             'assets/logo/logo.png',
             width: double.infinity, // Specify the desired width
@@ -18,6 +21,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavbar(),
     );
   }
 }
