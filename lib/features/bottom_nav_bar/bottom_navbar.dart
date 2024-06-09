@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fur_ball/core/constants/app_colors.dart';
-import 'package:fur_ball/features/favourite/favourite.dart';
-import 'package:fur_ball/features/home/home_page.dart';
-import 'package:fur_ball/features/settings/settings.dart';
+
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
 
 class BottomNavbar extends StatefulWidget {
@@ -38,9 +36,9 @@ class _BottomNavbarState extends State<BottomNavbar> {
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
           children: <Widget>[
-            HomePage(),
-            FavouritePage(),
-            SettingsPage(),
+            Container(child: Icon(Icons.home)),
+            Container(child: Icon(Icons.favorite)),
+            Container(child: Icon(Icons.settings)),
           ],
         ),
         bottomNavigationBar: WaterDropNavBar(
@@ -57,8 +55,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
           selectedIndex: selectedIndex,
           barItems: <BarItem>[
             BarItem(
-              filledIcon: Icons.home,
-              outlinedIcon: Icons.home_filled,
+              filledIcon: Icons.pets,
+              outlinedIcon: Icons.pets_rounded,
             ),
             BarItem(
                 filledIcon: Icons.favorite_rounded,
