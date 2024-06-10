@@ -3,6 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:fur_ball/core/constants/app_colors.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:fur_ball/features/settings/settings.dart';
+
+import '../../pets_screen/pet_screen.dart';
+import 'home_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,6 +17,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _page =0;
+  final PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,18 +44,29 @@ class _HomePageState extends State<HomePage> {
           Icon(Icons.pets),
           Icon(Icons.settings),
         ],
-        onTap: (index){
+        onTap: (index) {
           setState(() {
-_page = index;
+            _page = index;
           });
+          _pageController.animateToPage(
+            index,
+            duration: Duration(milliseconds: 400),
+            curve: Curves.easeInOut,
+          );
         },
       ),
-      body: Center(
-        child: Text(_page.toString(),
-        style: const TextStyle(
-          fontSize: 300,
-          fontWeight: FontWeight.w400
-        ),),
+      body: PageView(
+        controller: _pageController,
+        onPageChanged: (index) {
+          setState(() {
+            _page = index;
+          });
+        },
+        children: const <Widget>[
+          HomeScreen(),
+          PetScreen(),
+          SettingsPage(),
+        ],
       ),
     );
   }
