@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.whiteColor,
+        backgroundColor: AppColors.primary,
         title: Padding(
           padding: const EdgeInsets.only(top: 8.0),
           child: Image.asset(
