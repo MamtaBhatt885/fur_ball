@@ -10,11 +10,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Row(
-              children: [
-        CarouselSliderPage()
-              ],
-            )
+
           ],
         ),
       )
