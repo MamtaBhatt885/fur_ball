@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text("Adopt Us",style: TextStyle(color: AppColors.secondary,fontSize: 32),),
@@ -27,6 +28,7 @@ Container(
     ),
   ),
 )
+
           ],
         ),
       )
