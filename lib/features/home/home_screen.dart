@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fur_ball/core/constants/app_colors.dart';
+import 'package:fur_ball/core/widgets/reusable_texts/home_screen_heading_text.dart';
 import 'package:fur_ball/features/home/carousel/slider.dart';
+
+import '../../core/widgets/reusable_cards/home_screen_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,11 +14,8 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+HomeScreenHeadingText(text: "Adopt Me"),
 
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Adopt Us",style: TextStyle(color: AppColors.secondary,fontSize: 32),),
-            ),
 Container(
   child: SingleChildScrollView(
     scrollDirection: Axis.horizontal,
@@ -32,27 +32,6 @@ Container(
           ],
         ),
       )
-    );
-  }
-}
-
-class ReusableContainer extends StatelessWidget {
-  const ReusableContainer({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.asset("assets/home_page/carousel_slider/cow.jpg",height: 200,),
-
-          ),
-          Text("Gayatri",style: TextStyle(fontSize: 24),),
-        ]
-
-      ),
     );
   }
 }
