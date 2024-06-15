@@ -11,7 +11,7 @@ class HomeScreenHeadingText extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(left:16.0,top: 8),
-          child: Text(text,style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold,color: AppColors.secondary),),
+          child: Text(text,style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold,color: AppColors.blackColor),),
         ),
       ],
     );
