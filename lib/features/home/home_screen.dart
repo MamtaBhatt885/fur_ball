@@ -29,7 +29,23 @@ Container(
     ),
 
   ),
-)
+),
+            HomeScreenHeadingText(text: "Our Products"),
+
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ReusableContainer(),
+                    ReusableContainer(),
+                    ReusableContainer(),
+                  ],
+                ),
+
+              ),
+            ),
+
 
           ],
         ),
