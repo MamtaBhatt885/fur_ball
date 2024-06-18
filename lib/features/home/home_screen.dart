@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fur_ball/core/constants/app_colors.dart';
+import 'package:fur_ball/core/constants/app_strings.dart';
 import 'package:fur_ball/core/widgets/reusable_texts/home_screen_heading_text.dart';
 import 'package:fur_ball/features/home/carousel/slider.dart';
 
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-HomeScreenHeadingText(text: "Adopt Me"),
+HomeScreenHeadingText(text: AppStrings.bestSeller),
 
 Container(
   child: SingleChildScrollView(
@@ -30,7 +31,7 @@ Container(
 
   ),
 ),
-            HomeScreenHeadingText(text: "Our Products"),
+            HomeScreenHeadingText(text: AppStrings.ourProducts),
 
             Container(
               child: SingleChildScrollView(
@@ -46,6 +47,21 @@ Container(
               ),
             ),
 
+            HomeScreenHeadingText(text: AppStrings.adoptMe),
+
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ReusableContainer(),
+                    ReusableContainer(),
+                    ReusableContainer(),
+                  ],
+                ),
+
+              ),
+            ),
 
           ],
         ),
