@@ -3,6 +3,7 @@ class AppStrings{
   static String ourProducts ="Our Products";
   static String contactUs = "Contact Us";
   static String bestSeller ="Best Seller";
+  static String mostLiked ="Most Liked";
 
 
 }
