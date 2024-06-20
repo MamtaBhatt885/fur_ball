@@ -16,6 +16,21 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            HomeScreenHeadingText(text: AppStrings.categories),
+
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ReusableContainer(),
+                    ReusableContainer(),
+                    ReusableContainer(),
+                  ],
+                ),
+
+              ),
+            ),
 HomeScreenHeadingText(text: AppStrings.bestSeller),
 
 Container(
