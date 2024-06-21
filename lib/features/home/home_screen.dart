@@ -77,21 +77,8 @@ Container(
 
               ),
             ),
-            HomeScreenHeadingText(text: AppStrings.mostLiked),
 
-            Container(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ReusableContainer(),
-                    ReusableContainer(),
-                    ReusableContainer(),
-                  ],
-                ),
 
-              ),
-            ),
 
           ],
         ),
