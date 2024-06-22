@@ -13,17 +13,18 @@ class ReusableContainer extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(16)),
-            color: AppColors.accentColor
+            color: AppColors.secondary
         ),
         height: 250,
         child: Column(
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Image.asset("assets/home_page/carousel_slider/cow.jpg",height: 200,),
+                child: Image.asset("assets/home_page/carousel_slider/dog1.jpg",height: 200,),
 
               ),
-              Text("Gayatri",style: TextStyle(fontSize: 24),),
+              Text("Gayatri",style: TextStyle(fontSize: 24,color:
+              AppColors.accentColor),),
             ]
 
         ),
