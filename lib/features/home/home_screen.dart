@@ -77,6 +77,22 @@ Container(
 
               ),
             ),
+            HomeScreenHeadingText(text: AppStrings.petCareg),
+
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ReusableContainer(),
+                    ReusableContainer(),
+                    ReusableContainer(),
+                  ],
+                ),
+
+              ),
+            ),
+
 
 
           ],
