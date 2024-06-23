@@ -5,6 +5,7 @@ class AppStrings{
   static String bestSeller ="Best Seller";
   static String mostLiked ="Most Liked";
   static String categories ="Categories";
+  static String petCare ="Pet Care Products";
 
 
 }
