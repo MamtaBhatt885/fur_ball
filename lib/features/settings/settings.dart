@@ -13,6 +13,9 @@ class SettingsPage extends StatelessWidget {
         ReusableCard(text: AppStrings.editProfile),
         ReusableCard(text: AppStrings.notifications),
         ReusableCard(text: AppStrings.changePassword),
+        ReusableCard(text: AppStrings.changePassword),
+        ReusableCard(text: AppStrings.faq),
+        ReusableCard(text: AppStrings.helpAndSupport),
         ReusableCard(text: AppStrings.logout),
 
         ],

@@ -12,5 +12,8 @@ class AppStrings{
 static String editProfile = "Edit Profile";
 static String notifications ="Notifications";
 static String changePassword = "Change Password";
+static String helpAndSupport = "Help and Support";
+static String faq = "FAQ";
+
 static String logout ="Logout";
 }
