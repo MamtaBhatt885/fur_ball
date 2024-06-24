@@ -77,7 +77,7 @@ Container(
 
               ),
             ),
-            HomeScreenHeadingText(text: AppStrings.petCareg),
+            HomeScreenHeadingText(text: AppStrings.petCare),
 
             Container(
               child: SingleChildScrollView(

@@ -8,4 +8,9 @@ class AppStrings{
   static String petCare ="Pet Care Products";
 
 
+  //settings
+static String editProfile = "Edit Profile";
+static String notifications ="Notifications";
+static String changePassword = "Change Password";
+static String logout ="Logout";
 }
