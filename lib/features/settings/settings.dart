@@ -8,14 +8,19 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-        ReusableCard(text: AppStrings.editProfile),
-        ReusableCard(text: AppStrings.notifications),
-        ReusableCard(text: AppStrings.changePassword),
-        ReusableCard(text: AppStrings.logout),
-
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+          ReusableCard(text: AppStrings.editProfile),
+          ReusableCard(text: AppStrings.notifications),
+          ReusableCard(text: AppStrings.changePassword),
+          ReusableCard(text: AppStrings.changePassword),
+          ReusableCard(text: AppStrings.faq),
+          ReusableCard(text: AppStrings.helpAndSupport),
+          ReusableCard(text: AppStrings.logout),
+        
+          ],
+        ),
       )
     );
   }

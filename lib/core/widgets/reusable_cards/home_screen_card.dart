@@ -13,7 +13,7 @@ class ReusableContainer extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(16)),
-            color: AppColors.secondary
+            color: AppColors.tertary
         ),
         height: 250,
         child: Column(

@@ -18,13 +18,14 @@ final String text;
             borderRadius: BorderRadius.all(Radius.circular(16)),
             color: AppColors.secondary
         ),
-        height: 50,
+        height: 60,
         width: double.infinity,
 
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              Text(text,style: TextStyle(fontSize: 24,color:
+              Text(text,style: TextStyle(fontSize: 32,color:
               AppColors.accentColor),),
             ]
 
