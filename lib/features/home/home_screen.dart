@@ -15,14 +15,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CarouselWithText(),
-            SizedBox(height: 20), // Add spacing between widgets
             HomeScreenHeadingText(text: AppStrings.categories),
-            SizedBox(height: 10), // Add spacing between widgets
+
             Container(
-              height: 200, // Ensure proper height
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -32,29 +28,27 @@ class HomeScreen extends StatelessWidget {
                     ReusableContainer(),
                   ],
                 ),
+
               ),
             ),
-            SizedBox(height: 20), // Add spacing between widgets
-            HomeScreenHeadingText(text: AppStrings.bestSeller),
-            SizedBox(height: 10), // Add spacing between widgets
-            Container(
-              height: 200, // Ensure proper height
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ReusableContainer(),
-                    ReusableContainer(),
-                    ReusableContainer(),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 20), // Add spacing between widgets
+HomeScreenHeadingText(text: AppStrings.bestSeller),
+
+Container(
+  child: SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    child: Row(
+      children: [
+       ReusableContainer(),
+        ReusableContainer(),
+        ReusableContainer(),
+      ],
+    ),
+
+  ),
+),
             HomeScreenHeadingText(text: AppStrings.ourProducts),
-            SizedBox(height: 10), // Add spacing between widgets
+
             Container(
-              height: 200, // Ensure proper height
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -64,13 +58,13 @@ class HomeScreen extends StatelessWidget {
                     ReusableContainer(),
                   ],
                 ),
+
               ),
             ),
-            SizedBox(height: 20), // Add spacing between widgets
+
             HomeScreenHeadingText(text: AppStrings.adoptMe),
-            SizedBox(height: 10), // Add spacing between widgets
+
             Container(
-              height: 200, // Ensure proper height
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -80,13 +74,12 @@ class HomeScreen extends StatelessWidget {
                     ReusableContainer(),
                   ],
                 ),
+
               ),
             ),
-            SizedBox(height: 20), // Add spacing between widgets
             HomeScreenHeadingText(text: AppStrings.petCare),
-            SizedBox(height: 10), // Add spacing between widgets
+
             Container(
-              height: 200, // Ensure proper height
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -96,11 +89,15 @@ class HomeScreen extends StatelessWidget {
                     ReusableContainer(),
                   ],
                 ),
+
               ),
             ),
+
+
+
           ],
         ),
-      ),
+      )
     );
   }
 }
